@@ -1,9 +1,8 @@
 package com.viso.security.auth.provider;
 
-import com.viso.mvc.security.auth.token.CustomAuthenticationToken;
+import com.viso.security.auth.token.CustomAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

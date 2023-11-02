@@ -1,6 +1,6 @@
-package com.viso.mvc.security.auth.filter;
+package com.viso.security.auth.filter;
 
-import com.viso.mvc.security.auth.token.CustomAuthenticationToken;
+import com.viso.security.auth.token.CustomAuthenticationToken;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

@@ -1,12 +1,9 @@
 spring:
   datasource:
     url: jdbc:h2:mem:stocktest;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    platform: h2
     username: admin
     password: password
     driverClassName: org.h2.Driver
-    schema: classpath:db/schema.sql
-    data: classpath:db/data.sql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
@@ -32,6 +29,11 @@ spring:
           github:
             clientId: d43004b27d66557f2a3e
             clientSecret: b871f21202e33fc588fdb52b32119839ffa3f2fd
+  sql:
+    init:
+      platform: h2
+      schema-locations: classpath:db/schema.sql
+      data-locations: classpath:db/data.sql
 
 server:
   port: 8083
